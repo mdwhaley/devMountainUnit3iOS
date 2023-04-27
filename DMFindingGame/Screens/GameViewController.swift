@@ -86,15 +86,10 @@ class GameViewController: UIViewController {
     func fireTimer(timer: Timer) {
         gameBrain.secondsRemaining -= 1
         updateUI()
-        
+
         if gameBrain.secondsRemaining <= 0 {
             timer.invalidate()
-            guard let startVC = storyboard?.instantiateViewController(identifier: "startScreen", creator: { coder in return StartViewController(coder: coder)})
-                    else {
-                    fatalError("Failed to load GameViewController")
-            }
             navigationController?.popViewController(animated: true)
-        
         }
     }
 }

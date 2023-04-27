@@ -21,6 +21,7 @@ class StartViewController: UIViewController {
      */
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         highScoreLabel.text = "High Score: \(gameBrain.highScore)"
     }
     

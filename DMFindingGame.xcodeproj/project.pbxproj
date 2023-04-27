@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54801E4329FA923E0050D2DA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54801E4229FA923E0050D2DA /* Launch Screen.storyboard */; };
+		54801E4529FA92CC0050D2DA /* devmountain-logo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 54801E4429FA92CC0050D2DA /* devmountain-logo3.png */; };
+		54801E4729FA99E50050D2DA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 54801E4629FA99E50050D2DA /* README.md */; };
+		54801E4B29FA9B730050D2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54801E4A29FA9B730050D2DA /* Assets.xcassets */; };
 		6377940729A31E0900D08D42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6377940629A31E0900D08D42 /* AppDelegate.swift */; };
 		6377940929A31E0900D08D42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6377940829A31E0900D08D42 /* SceneDelegate.swift */; };
 		6377940B29A31E0900D08D42 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6377940A29A31E0900D08D42 /* GameViewController.swift */; };
@@ -29,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54801E4229FA923E0050D2DA /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		54801E4429FA92CC0050D2DA /* devmountain-logo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "devmountain-logo3.png"; sourceTree = "<group>"; };
+		54801E4629FA99E50050D2DA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		54801E4A29FA9B730050D2DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6377940329A31E0900D08D42 /* DMFindingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMFindingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6377940629A31E0900D08D42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6377940829A31E0900D08D42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +94,9 @@
 				639FBDEF29EDA7B8008CEF57 /* Model */,
 				639FBDE729ED962E008CEF57 /* Support */,
 				6377941429A31E0A00D08D42 /* Info.plist */,
+				54801E4429FA92CC0050D2DA /* devmountain-logo3.png */,
+				54801E4A29FA9B730050D2DA /* Assets.xcassets */,
+				54801E4629FA99E50050D2DA /* README.md */,
 			);
 			path = DMFindingGame;
 			sourceTree = "<group>";
@@ -107,6 +118,7 @@
 				639FBDEA29ED96ED008CEF57 /* StartViewController.swift */,
 				6377940A29A31E0900D08D42 /* GameViewController.swift */,
 				6377940C29A31E0900D08D42 /* Main.storyboard */,
+				54801E4229FA923E0050D2DA /* Launch Screen.storyboard */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -209,8 +221,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6377941329A31E0A00D08D42 /* LaunchScreen.storyboard in Resources */,
+				54801E4529FA92CC0050D2DA /* devmountain-logo3.png in Resources */,
 				6377941029A31E0A00D08D42 /* Assets.xcassets in Resources */,
+				54801E4729FA99E50050D2DA /* README.md in Resources */,
+				54801E4B29FA9B730050D2DA /* Assets.xcassets in Resources */,
 				6377940E29A31E0900D08D42 /* Main.storyboard in Resources */,
+				54801E4329FA923E0050D2DA /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +415,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DMFindingGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -428,7 +444,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DMFindingGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";

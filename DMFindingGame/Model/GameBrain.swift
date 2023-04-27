@@ -32,6 +32,7 @@ import Foundation
  
  Run the tests in `DMFindingGameTests` to make sure your code is correct.
  */
+
 class GameBrain {
     var targetLetter = ""
     var randomLetters = [""]
@@ -40,6 +41,8 @@ class GameBrain {
     var numLetters = 0
     var secondsRemaining = 30
     let letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+    let scoreKey = "scoreKey"
+            
     
 
     
