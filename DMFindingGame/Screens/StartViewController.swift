@@ -17,15 +17,14 @@ class StartViewController: UIViewController {
     @IBOutlet weak var highScoreLabel: UILabel!
     let gameBrain = GameBrain.shared
     
-    
     /**
      3.1 Update the `highScoreLabel`'s text to be the high score from the game brain.
      */
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let highScore = CoreDataManager.shared.calculateHighScore()
+        CoreDataManager.shared.fetchScores()
         yourScoreLabel.text = "Your Score: \(gameBrain.score)"
-        highScoreLabel.text = "High Score: \(highScore)"
+        highScoreLabel.text = "High Score: \(CoreDataManager.shared.calculateHighScore())"
     }
     
     /**
