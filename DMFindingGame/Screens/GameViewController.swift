@@ -40,6 +40,7 @@ class GameViewController: UIViewController {
      */
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
+        CoreDataManager.shared.addScore(score: gameBrain.score)
         timer.invalidate()
     }
     

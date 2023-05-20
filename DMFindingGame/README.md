@@ -1,17 +1,10 @@
-# DevMountain iOS Unit 3 Project
+# DevMountain iOS Unit 4 Project
 
-## DMFindingGame v2
+## DMFindingGame v3
 
-This version adds a timer, a score, and a high score.
-I changed the colors from the last version to a 
-monochromatic theme.
+This version adds a persistent storage of all scores and High Score.
 
 ### Bonus Features
 
-I added an app icon, a launch screen and change the button colors
-to red if incorrect and green if correct and back to default after a 
-short time.
-
-### Wish list
-
-Store high score forever
+Shows the user score after round has ended
+Thanks for looking

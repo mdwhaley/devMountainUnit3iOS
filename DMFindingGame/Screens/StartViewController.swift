@@ -13,27 +13,32 @@ import UIKit
  */
 class StartViewController: UIViewController {
     
+    @IBOutlet weak var yourScoreLabel: UILabel!
     @IBOutlet weak var highScoreLabel: UILabel!
     let gameBrain = GameBrain.shared
+    
     
     /**
      3.1 Update the `highScoreLabel`'s text to be the high score from the game brain.
      */
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        highScoreLabel.text = "High Score: \(gameBrain.highScore)"
+        let highScore = CoreDataManager.shared.calculateHighScore()
+        yourScoreLabel.text = "Your Score: \(gameBrain.score)"
+        highScoreLabel.text = "High Score: \(highScore)"
     }
     
     /**
      4.1 Transition the user to the `GameViewController`.
      */
     @IBAction func startButton(_ sender: UIButton) {
-        guard let gameVC = storyboard?.instantiateViewController(identifier: "gameScreen", creator: { coder in return GameViewController(coder: coder)})
-                else {
-                fatalError("Failed to load GameViewController")
-        }
-        navigationController?.pushViewController(gameVC, animated: true)
+        self.performSegue(withIdentifier: "gameScreen", sender: self)
+        
+    }
+    
+    @IBAction func statsButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "statsScreen", sender: self)
     }
     
 }
+
